@@ -1,0 +1,30 @@
+.table-container {
+  display: inline-block;
+  background-color: #a52a2a;
+  color: #ffffff;
+  padding: 50px;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.table-container h1 {
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+}
+
+table,
+td {
+  border: 1px solid #000000;
+}
+
+td {
+  padding: 10px;
+}
+
+table a {
+  color: blue !important;
+  outline: initial;
+}
