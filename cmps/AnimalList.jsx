@@ -1,5 +1,4 @@
 const AnimalList = ({ animalInfos }) => {
-  console.log("🚀 ~ AnimalList ~ animalInfos:", animalInfos);
   return (
     <div className="table-container">
       <h1>Rare Animals</h1>
