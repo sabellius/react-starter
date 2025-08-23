@@ -1,5 +1,6 @@
 import AnimalList from '../cmps/AnimalList.jsx';
 import CountDown from '../cmps/CountDown.jsx';
+import MouseMonitor from '../cmps/MouseMonitor.jsx';
 import SeasonClock from '../cmps/SeasonClock.jsx';
 import WatcherApp from '../cmps/WatcherApp.jsx';
 import { utilService } from '../services/util.service.js';
@@ -21,7 +22,8 @@ export function Home() {
         toTime={Date.now() + 5 * 1000}
         onDone={ref => utilService.animateCSS(ref.current)}
       /> */}
-      <WatcherApp />
+      {/* <WatcherApp /> */}
+      <MouseMonitor />
     </section>
   );
 }
