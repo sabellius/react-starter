@@ -1,0 +1,10 @@
+.season-container {
+  width: 250px;
+  height: 300px;
+  background-color: aqua;
+}
+
+.dark {
+  background-color: blue;
+  color: white;
+}

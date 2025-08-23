@@ -1,4 +1,5 @@
 import AnimalList from '../cmps/AnimalList.jsx';
+import SeasonClock from '../cmps/SeasonClock.jsx';
 
 const animalInfos = [
   { type: 'Malayan Tiger', count: 787 },
@@ -9,8 +10,9 @@ const animalInfos = [
 export function Home() {
   return (
     <section className="home">
-      <h2>Home Sweet Home</h2>
-      <AnimalList animalInfos={animalInfos} />
+      {/* <h2>Home Sweet Home</h2> */}
+      {/* <AnimalList animalInfos={animalInfos} /> */}
+      <SeasonClock />
     </section>
   );
 }
