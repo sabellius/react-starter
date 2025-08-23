@@ -1,0 +1,22 @@
+.watchers-container {
+  background-color: #e6bfad;
+}
+
+.card {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  margin-block-end: 20px;
+}
+
+dialog {
+  background-color: #a52a2a;
+  color: #ffffff;
+}
