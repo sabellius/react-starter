@@ -14,7 +14,11 @@ export function Home() {
       {/* <h2>Home Sweet Home</h2> */}
       {/* <AnimalList animalInfos={animalInfos} /> */}
       {/* <SeasonClock /> */}
-      <CountDown startFrom={10} onDone={() => console.log('DONE!')} />
+      <CountDown
+        startFrom={10}
+        toTime={Date.now() + 5 * 1000}
+        onDone={() => console.log('DONE!')}
+      />
     </section>
   );
 }

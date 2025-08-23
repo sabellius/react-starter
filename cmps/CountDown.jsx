@@ -1,7 +1,9 @@
 const { useState, useEffect } = React;
 
-const CountDown = ({ startFrom, onDone }) => {
-  const [count, setCount] = useState(startFrom);
+const CountDown = ({ startFrom, onDone, toTime = null }) => {
+  const [count, setCount] = useState(
+    toTime ? (toTime - Date.now()) / 1000 : startFrom
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,7 +18,7 @@ const CountDown = ({ startFrom, onDone }) => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [startFrom]);
+  }, []);
 
   return (
     <div className="outer-container">
