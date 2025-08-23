@@ -34,11 +34,6 @@ const WatcherApp = () => {
 
   useEffect(() => {
     if (toggleForm) {
-      console.log('🚀 ~ WatcherApp ~ toggleForm:', toggleForm);
-      console.log(
-        '🚀 ~ WatcherApp ~ watcherFormRef.current:',
-        watcherFormRef.current
-      );
       watcherFormRef.current.showModal();
     } else {
       if (watcherFormRef.current) {
@@ -65,7 +60,6 @@ const WatcherApp = () => {
       value = value.split('\n').map(v => v.trim());
     }
     setFormData({ ...formData, [name]: value });
-    console.log('🚀 ~ handleChange ~ formData:', formData);
   }
 
   return (
