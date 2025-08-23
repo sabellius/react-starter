@@ -1,4 +1,5 @@
 import AnimalList from '../cmps/AnimalList.jsx';
+import CountDown from '../cmps/CountDown.jsx';
 import SeasonClock from '../cmps/SeasonClock.jsx';
 
 const animalInfos = [
@@ -12,7 +13,8 @@ export function Home() {
     <section className="home">
       {/* <h2>Home Sweet Home</h2> */}
       {/* <AnimalList animalInfos={animalInfos} /> */}
-      <SeasonClock />
+      {/* <SeasonClock /> */}
+      <CountDown startFrom={10} onDone={() => console.log('DONE!')} />
     </section>
   );
 }
