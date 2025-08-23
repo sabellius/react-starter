@@ -1,5 +1,7 @@
 import AnimalList from '../cmps/AnimalList.jsx';
+import CountDown from '../cmps/CountDown.jsx';
 import SeasonClock from '../cmps/SeasonClock.jsx';
+import { utilService } from '../services/util.service.js';
 
 const animalInfos = [
   { type: 'Malayan Tiger', count: 787 },
@@ -12,7 +14,12 @@ export function Home() {
     <section className="home">
       {/* <h2>Home Sweet Home</h2> */}
       {/* <AnimalList animalInfos={animalInfos} /> */}
-      <SeasonClock />
+      {/* <SeasonClock /> */}
+      <CountDown
+        startFrom={10}
+        toTime={Date.now() + 5 * 1000}
+        onDone={ref => utilService.animateCSS(ref.current)}
+      />
     </section>
   );
 }
