@@ -21,7 +21,7 @@ const CountDown = ({ startFrom, onDone }) => {
   return (
     <div className="outer-container">
       <div className="inner-container">
-        <div className="count">{count}</div>
+        <div className={`count ${count <= 6 ? 'color-red' : ''}`}>{count}</div>
       </div>
     </div>
   );
