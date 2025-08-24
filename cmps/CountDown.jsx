@@ -2,7 +2,7 @@ const { useState, useEffect, useRef } = React;
 
 const CountDown = ({ startFrom, onDone, toTime = null }) => {
   const [count, setCount] = useState(
-    toTime ? (toTime - Date.now()) / 1000 : startFrom
+    toTime ? Math.ceil((toTime - Date.now()) / 1000) : startFrom
   );
   const counterRef = useRef(null);
   const audioRef = useRef(null);
